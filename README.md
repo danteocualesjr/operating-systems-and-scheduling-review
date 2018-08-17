@@ -1,12 +1,28 @@
 # Operating Systems-and Scheduling Review
 
-* [ ] Name some of the things an Operating System does
-* [ ] Name some of the thins a Scheduler does.
-* [ ] What types of Scheduler are there? Describe them.
+* [x] Name some of the things an Operating System does
+- Manages memory allocation
+- Creates  processes,
+- Schedules the processes using a given algorithm (MLFQ - Multi-level Feed back queue)
+- Manages all the system programs
+
+* [x] Name some of the things a Scheduler does.
+- schedules the processes
+- controls time sharing
+- selects which processes will receive priority
+
+
+* [x] What types of Scheduler are there? Describe them.
+- MLFQ
+- Round Robin
+[Link to other types of Schedulers](https://www.youtube.com/watch?v=FYcc9D8llF0)
+
+Advantages of MLFQ
+- does not waste time, so its more efficient
 
 
 ## practise with C commands
-* [ ] fflush(stdout) [example](https://stackoverflow.com/questions/22901901/what-does-fflushstdin-do-in-c-programing)
+* [x] fflush(stdout) [example](https://stackoverflow.com/questions/22901901/what-does-fflushstdin-do-in-c-programing)
 
 ```
 #include <stdio.h>
@@ -34,11 +50,11 @@ int main () {
 }
 ```
 
-* [ ] fgets [example](https://www.geeksforgeeks.org/fgets-gets-c-language/)
+* [x] fgets [example](https://www.geeksforgeeks.org/fgets-gets-c-language/)
 
 ```
 / C program to illustrate
-// gets()
+// fgets()
 #include <stdio.h>
 #define MAX 15
 
@@ -47,13 +63,13 @@ int main()
     char buf[MAX];
 
     printf("Enter a string: ");
-    gets(buf);
+    fgets(buf, MAX, stdin);
     printf("string is: %s\n", buf);
 
     return 0;
 }
 ```
-* [ ] feof(stdin) [example](https://www.tutorialspoint.com/c_standard_library/c_function_feof.htm)
+* [x] feof(stdin) [example](https://www.tutorialspoint.com/c_standard_library/c_function_feof.htm)
 
 ```
 #include <stdio.h>
@@ -81,7 +97,7 @@ int main () {
 }
 
 ```
-* [ ] strok(str)[example](https://www.tutorialspoint.com/c_standard_library/c_function_strtok.htm)
+* [x] char *strtok(char *str, const char *delim)[example](https://www.tutorialspoint.com/c_standard_library/c_function_strtok.htm)
 
 ```
 #include <string.h>
@@ -105,7 +121,7 @@ int main () {
    return(0);
 }
 ```
-* [ ] strcmp(str1, str2)[example](https://www.geeksforgeeks.org/strcmp-in-c-cpp/)
+* [x] strcmp(str1, str2)[example](https://www.geeksforgeeks.org/strcmp-in-c-cpp/)
 ```
 // C program to illustrate
 // strcmp() function
@@ -130,9 +146,9 @@ int main()
     return 0;
 }
 ```
-* [ ] fork()
-* [ ] waitpid
-* [ ] excvp(myargs[0], myargs)
+* [x] fork()
+* [x] waitpid
+* [x] excvp(myargs[0], myargs)
 
 ```
 This function could by used by a Unix shell to run a command and wait for the command to finish before going on. It returns the termination status of the command.

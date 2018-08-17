@@ -1,0 +1,7 @@
+Welcome to lambda notes.
+Here is a list of things you will learn from lambda school
+1. Javscript, vanilla javascript/ node.J
+2. Python
+3. Django
+4. C
+5 More stuff, like react, redux.......
