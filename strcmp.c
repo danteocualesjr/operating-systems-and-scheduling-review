@@ -6,8 +6,8 @@
 int main()
 {
 
-    char leftStr[] = "g f g";
-    char rightStr[] = "g f g";
+    char leftStr[] = "abc";
+    char rightStr[] = "abc";
 
     // Using strcmp()
     int res = strcmp(leftStr, rightStr);

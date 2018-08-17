@@ -3,6 +3,11 @@
 #include <string.h>
 #include <unistd.h>
 
+// The exec() function is a C library function that allows the child process to run a program different from that of the parent process.
+// The execvp() function is a varient of exec().
+// The exec family of functions replaces the current running process with a new process.
+// Using this command, the created child process does not have to run the same program as the parent process does. 
+// https://www.geeksforgeeks.org/exec-family-of-functions-in-c/
 // The execvp() function provides an array of pointers to null-terminated strings that represent the argument list available to the new program.
 
 int main(int argc, char **argv)
