@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// The feof() function finds the end of the file.
+
 int main(void)
 {
 	FILE *fp;

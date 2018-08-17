@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<string.h>
 
+// The strcom() function
+
 int main()
 {
 

@@ -3,6 +3,8 @@
 #include <string.h>
 #include <unistd.h>
 
+// The execvp() function provides an array of pointers to null-terminated strings that represent the argument list available to the new program.
+
 int main(int argc, char **argv)
 {
     char *args[3]; //this tells us that there are 3 pointers in the array
@@ -13,17 +15,17 @@ int main(int argc, char **argv)
             exit(1);
         } else if (rc==0) {
             //child
-            printf("Hello Child Here\n");
+            printf("Hello, Child here!\n");
             args[0] = strdup("Wc");
             args[1] = strdup("file.txt");
             args[2] = NULL;
 
             execvp(args[0], args);
-            printf("This is should not be seen!");
+            printf("This should not be seen.\n");
         } else {
             //parent
             int wc = waitpid(rc, NULL, 0);
-            printf("Hello I am the parent\n");
+            printf("Hello, Parent here!\n");
 
         }
         sleep(5);
